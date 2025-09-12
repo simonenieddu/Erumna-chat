@@ -4,3 +4,21 @@
 
 html, body { height: 100%; }
 body { @apply bg-gradient-to-br from-white to-sky-50 text-slate-800; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { @apply bg-gradient-to-br from-white to-sky-50 text-slate-800; }
+
+/* animazione ingresso messaggi */
+@keyframes pop { from { transform: translateY(4px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+.animate-pop { animation: pop .18s ease-out both; }
+
+/* avatar pulse morbido quando Erumna “pensa” */
+@keyframes pulseSoft {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(2,132,199,.18); }
+  70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(2,132,199,0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(2,132,199,0); }
+}
+.animate-pulse-soft { animation: pulseSoft 1.2s ease-out infinite; }
