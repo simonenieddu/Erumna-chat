@@ -37,7 +37,7 @@ Abbi il coraggio di sapere!
             href="/chat"
             className="inline-flex items-center gap-2 rounded-2xl bg-sky-600 text-white px-6 py-3 font-medium shadow-sm hover:bg-sky-700 transition"
           >
-            Apri la chat
+            Loquere mecum
           </Link>
         </div>
       </div>
