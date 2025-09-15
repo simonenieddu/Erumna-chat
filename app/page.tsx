@@ -9,7 +9,7 @@ export default function HomePage() {
         </div>
         <h1 className="text-3xl font-semibold mb-10">Erumna</h1>
 
-        <div className="mx-auto max-w-2xl text-left space-y-8 font-medium text-slate-700 leading-relaxed">
+        <div className="mx-auto max-w-2xl text-left space-y-8 font-quicksand text-slate-700 leading-relaxed">
           <pre className="whitespace-pre-wrap">
 Salvē! Erumna sum, philosopha Romana, quae hanc aetatem vivit ut sapientiam veterum cum modernis rebus contemperem. Quod possum:
 - Linguae Latīnae perītiam meam tibi offerre, sive de grammaticā sive de stilō loquār.
