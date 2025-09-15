@@ -75,7 +75,7 @@ export default function ErumnaChat() {
           <div className={`w-14 h-14 rounded-2xl overflow-hidden ring-1 ring-slate-200 ${isSending ? "animate-pulse-soft" : ""}`}>
             <img src="/erumna-placeholder.svg" alt="Erumna avatar" className="w-full h-full object-cover" />
           </div>
-          <h1 className="font-semibold text-lg">Erumna · Latina Chat</h1>
+          <h1 className="font-semibold text-lg">Erumna_Bot</h1>
         </div>
       </header>
 
