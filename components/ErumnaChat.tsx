@@ -1,5 +1,6 @@
 'use client';
-
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useEffect, useRef, useState } from "react";
 
 type Msg = { id: number; role: "user" | "assistant"; text: string; ts: Date };
@@ -94,7 +95,11 @@ export default function ErumnaChat() {
                   </div>
                   <div className="relative">
                     <div className="rounded-2xl rounded-tl-sm bg-slate-100 px-4 py-3 shadow-sm">
-                      <p className="leading-relaxed"><span className="font-semibold">Erumna:</span> {m.text}</p>
+                      <div className="rounded-2xl rounded-tl-sm bg-slate-100 px-4 py-3 shadow-sm prose prose-sm max-w-none">
+  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+    {m.text}
+  </ReactMarkdown>
+</div>
                     </div>
                     <div className="absolute -left-1 top-2 w-2 h-2 bg-slate-100 rotate-45 shadow-sm" />
                   </div>
